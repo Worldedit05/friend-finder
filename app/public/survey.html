@@ -146,7 +146,7 @@
           </select>
           <hr>
           <div class="center-block">
-              <a href="/survey" class="btn btn-primary btn-lg center-block" style="width: 75%">
+              <a href="/survey" class="btn btn-primary btn-lg center-block" id="submit" style="width: 75%">
                 <h4><span class="glyphicon glyphicon-hdd"></span>
                 Submit</h4>
               </a>
@@ -158,5 +158,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        //Capture the values when the Sumbit buttion was progress-striped
+        $('#submit').on("click", function() {
+          console.log("scores: " + $("#q1").val() + $("#q2").val() + + $("#q3").val())
+        })
+    </script>
   </body>
 </html>
