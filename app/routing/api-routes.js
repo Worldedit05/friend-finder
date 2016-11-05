@@ -23,6 +23,8 @@ module.exports = function(app) {
         var resultsArry = [];
         newUserData = req.body;
 
+        console.log(req.body);
+
         friendData.forEach(function(element, index) {
 
             var newArry = element.scores;
@@ -54,6 +56,6 @@ module.exports = function(app) {
 
         res.json(friendData[index]);
 
-        friendData.push(newUserData);
+        friendData.push(req.body);
     });
 };
