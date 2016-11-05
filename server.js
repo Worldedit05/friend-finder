@@ -14,9 +14,13 @@ var PORT = process.env.PORT || 3000;
 // Standard Body Parser code to make things a little easier
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use(bodyParser.text());
-app.use(bodyParser.json({type:'application/vnd.api+json'}));
+app.use(bodyParser.json({
+    type: 'application/vnd.api+json'
+}));
 
 //Router files
 //Point our server to the route files
@@ -27,5 +31,5 @@ require('./app/routing/html-routes.js')(app);
 // Start the server with a listener
 
 app.listen(PORT, function() {
-  console.log("App listening on PORT: " + PORT);
+    console.log("App listening on PORT: " + PORT);
 });
