@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Friend Finder | Survey</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Survey Questions</h2>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3>About You</h3></div>
+        <div class="panel-body">
+          <h4>Name (Required)</h4>
+          <input type="text" id="name" class="form-control" required>
+          <br>
+          <h4>Link to Photo Image (Required)</h4>
+          <input type="text" id="photo" class="form-control" required>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3>Questions</h3></div>
+        <div class="panel-body">
+          <h3>Question #1</h3>
+          <h4>You really enjoy the outdoors.</h4>
+          <select class="chosen-select" id="q1">
+            <option selected>None Selected</option>
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five (Strongly Agree)</option>
+          </select>
+          <hr>
+          <h3>Question #2</h3>
+          <h4>You really enjoy playing video games.</h4>
+          <select class="chosen-select" id="q2">
+            <option selected>None Selected</option>
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five (Strongly Agree)</option>
+          </select>
+          <hr>
+          <h3>Question #3</h3>
+          <h4>You are passionate about cooking.</h4>
+          <select class="chosen-select" id="q3">
+            <option selected>None Selected</option>
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five (Strongly Agree)</option>
+          </select>
+          <hr>
+          <h3>Question #4</h3>
+          <h4>You love to stay in on the weekend and watch a movie.</h4>
+          <select class="chosen-select" id="q4">
+            <option selected>None Selected</option>
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five (Strongly Agree)</option>
+          </select>
+          <hr>
+          <h3>Question #5</h3>
+          <h4>You love to head to the bar/club on a Friday/Saturday night.</h4>
+          <select class="chosen-select" id="q5">
+            <option selected>None Selected</option>
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five (Strongly Agree)</option>
+          </select>
+          <hr>
+          <h3>Question #6</h3>
+          <h4>You love going to bed and waking up early.</h4>
+          <select class="chosen-select" id="q6">
+            <option selected>None Selected</option>
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five (Strongly Agree)</option>
+          </select>
+          <hr>
+          <h3>Question #7</h3>
+          <h4>Shared music tastes are very import to you.</h4>
+          <select class="chosen-select" id="q7">
+            <option selected>None Selected</option>
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five (Strongly Agree)</option>
+          </select>
+          <hr>
+          <h3>Question #8</h3>
+          <h4>I like meeting new people.</h4>
+          <select class="chosen-select" id="q8">
+            <option selected>None Selected</option>
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five (Strongly Agree)</option>
+          </select>
+          <hr>
+          <h3>Question #9</h3>
+          <h4>I am a fan of sports.</h4>
+          <select class="chosen-select" id="q9">
+            <option selected>None Selected</option>
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five (Strongly Agree)</option>
+          </select>
+          <hr>
+          <h3>Question #10</h3>
+          <h4>I like being in crowded places with a lot of people.</h4>
+          <select class="chosen-select" id="q10">
+            <option selected>None Selected</option>
+            <option value="1">One (Strongly Disagree)</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4">Four</option>
+            <option value="5">Five (Strongly Agree)</option>
+          </select>
+          <hr>
+          <div class="center-block">
+              <a href="/survey" class="btn btn-primary btn-lg center-block" style="width: 75%">
+                <h4><span class="glyphicon glyphicon-hdd"></span>
+                Submit</h4>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
